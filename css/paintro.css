@@ -1,0 +1,129 @@
+.step {
+    position: relative;
+    width: 900px;
+    padding: 40px;
+    margin: 20px auto;
+    font-family: helvetica, sans-serif;
+    font-size: 48px;
+}
+
+.impress-enabled .step {
+    margin: 0;
+    opacity: 0.3;
+
+    -webkit-transition: opacity 1s;
+    -moz-transition:    opacity 1s;
+    -ms-transition:     opacity 1s;
+    -o-transition:      opacity 1s;
+    transition:         opacity 1s;
+}
+
+.impress-enabled .step.active { opacity: 1 }
+
+
+.slide {
+    display: block;
+    width: 900px;
+    height: 700px;
+    padding: 40px 60px;
+
+    background-color: #eee;
+
+    font-size: 30px;
+}
+
+#resources div{
+    margin-top: 1%;
+}
+
+#title h1{
+    margin-top: 25%; 
+}
+#title h2{
+    font-size: 48px;
+    font-style: italic;
+    color: #666;
+}
+
+#background h1{
+    margin-top: 40%;
+}
+
+#backgroundAdaptivity{
+    text-align:center;
+}
+
+#evolve {
+    position: absolute;
+    margin-left: 25%;
+    margin-top: 10%;
+    font-size: 48px;
+    line-height: 60px;
+}
+
+#evolve div{
+    margin-top: 3%;
+    text-align: center;
+    padding: 2px;
+}
+
+#evolve #c1evolve{
+    background-color: #F4A460;
+}
+
+#evolve #c2evolve{
+    background-color: #7FFF00;
+}
+#evolve #c3evolve{
+    background-color: #FF4500;
+}
+
+#CollaborateWithUs div{
+    font-size:48px;
+    line-height: 60px;
+    background-color:  #EEE8AA;
+    text-align: center;
+    margin-top: 1%;
+}
+
+#CollaborateWithUs #getintouch{
+    margin-top: 10%;
+   background-color: #fff; 
+} 
+
+#Themes{ 
+text-align:center;
+}
+
+#Themes img{
+   margin-top: 10%;
+}
+
+.challenge{
+    text-align:center;
+}
+#ChallengeTwo img{
+    margin-top: 4%;
+}
+#ChallengeThree img{
+    margin-top: 4%;
+}
+
+h1{
+    font-family: helvetica, sans-serif;
+    text-align: center;
+    font-size: 60px;
+    line-height: 72px;
+}
+
+h2 {
+    font-family: helvetica, sans-serif;
+    text-align: center;
+    font-size: 48px;
+    line-height: 60px;
+}
+
+a{
+    color: #4682B4;
+    text-decoration: none;
+}

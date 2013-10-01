@@ -35,9 +35,6 @@ footer, header, hgroup, menu, nav, section {
 body {
     line-height: 1;
 }
-ol, ul {
-    list-style: none;
-}
 blockquote, q {
     quotes: none;
 }
@@ -61,9 +58,12 @@ b, strong { font-weight: bold }
 
 i, em { font-style: italic }
 
-
-    And then we hide the message, when support is detected in the browser.
-*/
+ul{
+list-style: circle
+}
+ul li   {
+    line-height: 1.5;
+}
 
 .fallback-message {
     font-family: sans-serif;
@@ -87,4 +87,20 @@ i, em { font-style: italic }
 }
 
 
+/*
+    The last step is an overview.
+    There is no content in it, so we make sure it's not visible because we want
+    to be able to click on other steps.
+
+*/
+#overview { display: none }
+
+/*
+    We also make other steps visible and give them a pointer cursor using the
+    `impress-on-` class.
+*/
+.impress-on-overview .step {
+    opacity: 1;
+    cursor: pointer;
+}
 
