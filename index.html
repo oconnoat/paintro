@@ -16,8 +16,8 @@
     <!--
         
         Impress.js doesn't depend on any external stylesheet. Script adds all styles it needs for
-        presentation to work.
-	<link href="css/impress-demo.css" rel="stylesheet" /> -->
+		presentation to work. -->
+	<link href="css/impress-base.css" rel="stylesheet" />
     
     <link rel="shortcut icon" href="favicon.png" />
     <link rel="apple-touch-icon" href="apple-touch-icon.png" />
@@ -100,106 +100,82 @@
 		<h1>Background: <em>What's this all about?</em></h1>
 	</div>
 	<div id="backgroundPersonalisationHat" class="step slide" data-x="0" data-y="-2000" data-z="-1000" data-rotate-x="90">
-		<img src="images/babyhat.jpg" width="1000"/>
+		<img src="images/babyhat.jpg" width="100%"/>
 	</div>
 		<div id="backgroundPersonalisation" class="step slide" data-x="0" data-y="-2000" data-z="-2000" data-rotate-x="90">
 			<h3>Personalisation:</h3>
 			<p><em>Change the user experience to fit the person.</em></p>
 	</div>
 	<div id="backgroundAdaptivityPic" class="step slide" data-x="0" data-y="-2000" data-z="-3000" data-rotate-x="90">
-		<h1>Adaptivity</h1><p><em></em></p>
+		<img src="images/screen.jpg" width="100%" />
 	</div>
 	<div id="backgroundAdaptivity" class="step slide" data-x="0" data-y="-2000" data-z="-3000" data-rotate-x="90">
-		<h1></h1><p><em></em></p>
+		<h1>Adaptivity:</h1><p><em>Apply knowledge to change how an application behaves.</em></p>
+	</div>
+	<div id="overallGoal" class="step slide" >
+		<h1>We want to evolve what, for whom and how we adapt and personalise</h1>
+		<div id="c1evolve">Text ➟ 🎬 Multimedia</div>
+		<div id="c2evolve">👦 Individual ➟ 👪 Social</div>
+		<div id="c3evolve">☈ Static ➟ ♺ Responsive</div>
 	</div>
 	<!-- Theme Overview -->
-	<div id="themeLeader" >
+	<div id="themeLeader" class="step slide" >
 		<h1>Prof. Owen Conlan (KDEG)</h1>
 		<img src="images/owen.jpg" />
 		<p>&lt;<a href="mailto:Owen.Conlan@scss.tcd.ie">Owen.Conlan@scss.tcd.ie</a>&gt;</p>
 	</div>
-	<div id="Challenges">
+	<div id="Challenges" class="step slide">
 		<div>Challenge 1: Content</div>
 		<div>Challenge 2: Social</div>
 		<div>Challenge 3: Novel Adaptation</div>
 	</div>
-	<div id="resources">
+	<div id="resources" class="step slide">
 		<h1>Core Theme People</h1>
-		<table border="1">
-			<tr><th>&nbsp;</th><th>Challenge 1</th><th>Challenge 2</th><th>Challenge 3</th></tr>
-			<tr><th>PhD</th><td></td><td></td><td></td></tr>
-			<tr><th>PostDoc</th><td></td><td></td><td></td></tr>
-			<tr><th>Academic</th><td></td><td></td><td></td></tr>
-		</table>
+		<div id="resourcesAcademics" width="40%" >
+			<h2>Academics &amp; PostDocs</h2>
+			<ul>
+				<li>Owen Conlan</li>
+				<li>Kenneth Dawson-Howe</li>
+				<li>Declan O'Sullivan</li>
+				<li>Vincent Wade</li>
+				<li>Alexander O'Connor</li>
+				<li>Cormac Hampson</li>
+			</ul>
+		</div>
+		<div id="resourcesStudents" width="40%" >
+			<h2>Students</h2>
+			<ul>
+				<li>James Coll&mdash;Micro Adaptation</li>
+				<li>Mostafa Bayoumi&mdash;Semantic Slicing (with S&amp;D)</li>
+				<li>Fatima Al Hirbi&mdash;Community Analytics (with I&amp;A)</li>
+				<li>Rebekah Clarke&mdash;Intelligent Content Framework (IRCSET)</li>
+				<li>Aonghus McGovern&mdash;Social Media User Modelling (TGI)</li>
+			</ul>
+		</div>
 	</div>
-	<div id="resourcesCross">
-		<h1>Cross-Theme People</h1>
+	<div id="ChallengeOne" class="step slide">
+			<img src="images/alex.png">
+			<p>Challenge Leader: Alexander O'Connor</p>
 	</div>
-	<div id="resourcesAffiliate">
-		<h1>Affiliated Work</h1>
+	<div id="ChallengeTwo" class="step slide">
+		<p>Challenge Leader: Owen Conlan</p>
 	</div>
-	<div id="ChallengeOne">
+	<div id="ChallengeThree" class="step slide">
+		<p>Challenge Leader: Owen Conlan</p>
 	</div>
-	<div id="ChallengeTwo">
+	<div id="CollaborateWithUs" class="step slide">
+		<h1>Can you help us understand the content better?</h1>
+		<h1>Can you help us understand the user better?</h1>
+		<h1>Could your system benefit from being personalised and adaptive?</h1>
 	</div>
-	<div id="ChallengeThree">
-	</div>
-	<div id="CollaborateWithUs">
-	</div>
-	<div id="MeetingMail">
+	<div id="MeetingMail" class="step slide">
 		<p>&lt;<a href="mailto:cnglpa@scss.tcd.ie">cnglpa@scss.tcd.ie</a>&gt;<br />
 		Alternatively:
 			&lt;<a href="mailto:Owen.Conlan@scss.tcd.ie">Owen.Conlan@scss.tcd.ie</a>&gt;
 			&lt;<a href="mailto:Alex.OConnor@scss.tcd.ie">Alex.OConnor@scss.tcd.ie</a>&gt;
 	</div>
-<!--
-    
-    Hint is not related to impress.js in any way.
-    
-    But it can show you how to use impress.js features in creative way.
-    
-    When the presentation step is shown (selected) its element gets the class of "active" and the body element
-    gets the class based on active step id `impress-on-ID` (where ID is the step's id)... It may not be
-    so clear because of all these "ids" in previous sentence, so for example when the first step (the one with
-    the id of `bored`) is active, body element gets a class of `impress-on-bored`.
-    
-    This class is used by this hint below. Check CSS file to see how it's shown with delayed CSS animation when
-    the first step of presentation is visible for a couple of seconds.
-    
-    ...
-    
-    And when it comes to this piece of JavaScript below ... kids, don't do this at home ;)
-    It's just a quick and dirty workaround to get different hint text for touch devices.
-    In a real world it should be at least placed in separate JS file ... and the touch content should be
-    probably just hidden somewhere in HTML - not hard-coded in the script.
-    
-    Just sayin' ;)
-    
--->
-<div class="hint">
-    <p>Use a spacebar or arrow keys to navigate</p>
 </div>
-<script>
-if ("ontouchstart" in document.documentElement) { 
-    document.querySelector(".hint").innerHTML = "<p>Tap on the left or right to navigate</p>";
-}
-</script>
 
-<!--
-    
-    Last, but not least.
-    
-    To make all described above really work, you need to include impress.js in the page.
-    I strongly encourage to minify it first.
-    
-    In here I just include full source of the script to make it more readable.
-    
-    You also need to call a `impress().init()` function to initialize impress.js presentation.
-    And you should do it in the end of your document. Not only because it's a good practice, but also
-    because it should be done when the whole document is ready.
-    Of course you can wrap it in any kind of "DOM ready" event, but I was too lazy to do so ;)
-    
--->
 <script src="js/impress.js"></script>
 <script>impress().init();</script>
 
