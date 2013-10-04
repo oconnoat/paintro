@@ -109,6 +109,14 @@ text-align:center;
     margin-top: 4%;
 }
 
+#themeLeaderAbout div, #themeLeaderFactoid div{
+    text-align: center;
+    font-size: 48px;
+    margin: 2%;
+    padding: 2%;
+    border: 1px dashed #333;
+}
+
 h1{
     font-family: helvetica, sans-serif;
     text-align: center;
